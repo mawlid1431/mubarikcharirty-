@@ -76,20 +76,3 @@
     },
   });
 })(jQuery);
-
-// List of valid pages
-const validPages = [
-  "index.html",
-  "donate.html",
-  "contact.html",
-  "causes.html",
-  "about.html",
-];
-
-// Extract the current page name from the URL
-const currentPage = window.location.pathname.split("/").pop();
-
-// Check if the current page is valid
-if (!validPages.includes(currentPage)) {
-  window.location.href = "/404.html"; // Redirect to the 404 page
-}
